@@ -1,0 +1,26 @@
+.clients-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+  }
+  .clients-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .clients-icon-logo {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .clients-icon:hover .clients-icon-logo {
+    fill: var(--accent-color);
+  }
+  .clients-icon:hover {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
