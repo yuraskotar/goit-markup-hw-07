@@ -1,11 +1,12 @@
 .benefits {
     display: flex;
     flex-basis: calc((100% - 90px) / 4);
-  }
-  .benefits-block:not(:last-child) {
+
+    &:not(:last-child) {
     margin-right: 30px;
-  }
-  .benefits-wraper {
+    }
+
+    &-wraper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,8 +15,9 @@
     margin-bottom: 30px;
     border-radius: 4px;
     background-color: #f5f4fa;
-  }
-  .benefits-list {
+    }
+
+    &-list {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -23,10 +25,16 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primery-text-color);
-  }
-  .benefits-item {
+    }
+
+    &-item {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-light);
+    }
   }
+  
+ 
+  
+  

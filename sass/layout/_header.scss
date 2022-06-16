@@ -15,10 +15,7 @@
     margin-left: auto;
     display: flex;
   }
-  .nav-list-item:not(:last-child) {
-    margin-right: 50px;
-  }
-  
+   
   .web {
     color: var(--accent-color);
   }
@@ -29,15 +26,25 @@
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .nav-list-link:hover,
-  .nav-list-link:focus {
+
+    &:hover,
+    &:focus {
     color: var(--accent-color);
   }
+  }
+  
   .nav-list-item {
     position: relative;
+
+    &:not(:last-child) {
+    margin-right: 50px;
+    }
   }
-  .current::after {
+  
+  .current {
+    color: var(--accent-color);
+
+    &::after {
     content: "";
     position: absolute;
     bottom: -31px;
@@ -46,9 +53,7 @@
     height: 4px;
     border-radius: 2px;
     background-color: var(--accent-color);
-  }
-  .current {
-    color: var(--accent-color);
+    }
   }
   .contact-mail-block {
     display: flex;
@@ -63,11 +68,13 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-light);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .contact-mail:hover,
-  .contact-mail:focus {
+
+    &:hover,
+    &:focus {
     color: var(--accent-color);
+    }
   }
+ 
   .mail-icon {
     margin-right: 10px;
     fill: currentColor;
@@ -90,8 +97,10 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-light);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .contact-number:hover,
-  .contact-number:focus {
+
+    &:hover,
+    &:focus {
     color: var(--accent-color);
   }
+  }
+  

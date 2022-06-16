@@ -14,11 +14,13 @@
     display: flex;
     flex-basis: calc((100% - 60px) / 3);
   }
-  .box:not(:last-child) {
-    margin-right: 30px;
-  }
+  
   .box {
     position: relative;
+
+    &:not(:last-child) {
+    margin-right: 30px;
+    }
   }
   .box-overlay {
     display: flex;

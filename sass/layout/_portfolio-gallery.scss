@@ -1,4 +1,4 @@
-.pane {
+  .pane {
     display: none;}
   .portfolio-list {
     display: flex;
@@ -21,15 +21,17 @@
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 color 250ms cubic-bezier(0.4, 0, 0.2, 1),
                 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .model-button-filter:hover,
-  .model-button-filter:focus {
+    
+    &:hover,
+    &:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
+    0px 2px 2px rgba(0, 0, 0, 0.12);
     background-color: var(--accent-color);
     color: var(--secondary-text-color-dark);
+    }
   }
+  
+  
   .project {
     display: flex;
     flex-wrap: wrap;
@@ -49,13 +51,14 @@
     text-decoration: none;
     color: inherit;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
-  }
-  .work-link:hover,
-  .work-link:focus {
+
+    &:hover,
+    &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
+  }
+  
   .group {
     padding: 20px 24px;
     border-bottom: 1px solid #eeeeee;
@@ -69,13 +72,15 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primery-text-color);
-  }
-  .works-item {
+
+    &-item {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-light);
+    }
   }
+  
   .overlay-card {
     position: relative;
     overflow: hidden;
@@ -98,8 +103,10 @@
     overflow: auto;
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .work-link:hover .overlay,
-  .work-link:focus .overlay {
+
+    .work-link:hover &,
+    .work-link:focus & {
     transform: translateY(0%);
   }
+  }
+  
