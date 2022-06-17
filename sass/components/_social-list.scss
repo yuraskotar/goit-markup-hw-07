@@ -6,7 +6,7 @@
     margin-right: 10px;
     }
   }
-  .social-list-link {
+  .social-list__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,8 +24,8 @@
     fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-  .social-list-link:hover &,
-  .social-list-link:focus & {
+  .social-list__link:hover &,
+  .social-list__link:focus & {
     fill: #ffffff;
   }
  }
